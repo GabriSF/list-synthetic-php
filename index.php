@@ -446,6 +446,27 @@ $estados = array(
     
 ?>
 
+<h1>PHP I: Lista Sintética de UFs</h1>
+<table>
+    <tr>
+        <?php foreach ($estados[array_key_first($estados)] as $chave => $valor) : ?>
+            <th><?php echo $chave; ?></th>
+        <?php endforeach; ?>
+    </tr>
+    <?php foreach ($estados as $estado => $dados) : ?>
+        <tr>
+            <?php foreach ($dados as $chave => $valor) : ?>
+                <?php if ($chave === 'Bandeira') : ?>
+                    <td>
+                        <img src="<?php echo $valor; ?>" alt="Bandeira do <?php echo $estado; ?>" height="32px" width="45px">
+                    </td>
+                <?php else : ?>
+                    <td><?php echo $valor; ?></td>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </tr>
+    <?php endforeach; ?>
+</table>
 
   
 </body>
