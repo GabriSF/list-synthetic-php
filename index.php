@@ -5,6 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista Sintética de UFs</title>
+    <style>
+
+td {
+ background-color: #121212;
+ color: white;
+}
+
+th {
+ background-color: #d63384;
+
+}
+
+  body {
+  background-color: #121212;
+   padding: 30px;
+ }
+
+ th,
+ td {
+   padding: 8px;
+   text-align: center;
+ }
+
+ h1{
+     color: #d63384;
+ }
+
+ </style>
 
 </head>
 <body>
